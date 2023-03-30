@@ -1,0 +1,7 @@
+Nome = input("Nome:")
+Idade = input("Idade:")
+Salario = float(input("Salário:"))
+Aumento = float(input("Aumento em porcetagem:"))
+Porcentagem = (Salario * Aumento / 100)
+Salario2 = (Salario + Porcentagem)
+print(f"Nome: {Nome}, Idade: {Idade}, Salário: {Salario} ,Aumento de: {Porcentagem}, Novo Salário: {Salario2}")
