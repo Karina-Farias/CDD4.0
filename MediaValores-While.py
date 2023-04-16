@@ -1,11 +1,12 @@
-numerador = 0
-denomidador = 2
-i = 0
+valor1 = float(input("Valor 1:"))
+while valor1 <= 0:
+    print("Digite um valor maior que zero:")
+    valor1 = float(input())
 
-while i < denomidador:
-    valor = float(input("Digite um número:"))
+valor2 = float(input("Valor 2:"))
+while valor2 <= 0:
+    print("Digite um valor maior que zero:")
+    valor2 = float(input())
 
-    numerador = numerador + valor
-    i = i + 1
-
-print("A média é: ", numerador/numerador)
+divisao = valor1 / valor2
+print("A divisão do", valor1, "e do", valor2, "é", divisao)
