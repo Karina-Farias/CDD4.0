@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b26aac-e42b-446a-ae7d-108194911f84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Python/JogoDaForca.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/POO - Herança - Animal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/POO - Herança - Forma.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/POO - Herança - Ingresso.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/POO - Class Pessoa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/POO - Pessoa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/POO - Conta Bancária.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/POO - Conta Bancária.py" afterDir="false" />
-    </list>
+    <list default="true" id="76b26aac-e42b-446a-ae7d-108194911f84" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
