@@ -10,7 +10,7 @@ class ContaBancaria:
     def depositar(self, valor):
         if self.status_conta:
             self.saldo += valor
-            print("Depósito realizado com sucesso.")
+            print(f"Depósito realizado com sucesso! Saldo atual: R${self.saldo:.2f}")
         else:
             print("Não é possível depositar. A conta está desativada.")
 
@@ -18,9 +18,14 @@ class ContaBancaria:
         if self.status_conta:
             if self.saldo >= valor:
                 self.saldo -= valor
-                print("Saque realizado com sucesso.")
+                print(f"Saque realizado com sucesso! Saldo atual: R${self.saldo:.2f}")
+            elif self.saldo + self.valor_limite >= valor:
+                valor_limite_utilizado = valor - self.saldo
+                self.saldo = 0
+                self.valor_limite -= valor_limite_utilizado
+                print(f"Saque realizado utilizando o valor do limite! Saldo atual: R${self.saldo:.2f}")
             else:
-                print("Saldo insuficiente para efetuar o saque.")
+                print(f"Saldo e valor do limite insuficientes para efetuar o saque. Saldo atual: R${self.saldo:.2f}")
         else:
             print("Não é possível sacar. A conta está desativada.")
 
@@ -46,14 +51,14 @@ class ContaBancaria:
             self.valor_limite = valor_liberado
             print(f"Valor de Limite Liberado: R${self.valor_limite:.2f}")
         else:
-            print("Não é possível liberar Limite. A conta está desativada.")
+            print("Não é possível liberar limite. A conta está desativada.")
 
     def desativar_limite(self):
         if self.status_conta:
             self.valor_limite = 0
-            print(f"Valor do Limite Bloqueado!")
+            print(f"Valor do limite bloqueado!")
         else:
-            print("Não é possível bloquear Limite. A conta está desativada.")
+            print("Não é possível bloquear limite. A conta está desativada.")
 
 # Exemplo de uso:
 conta1 = ContaBancaria(123456, "João da Silva", "Corrente")
@@ -66,4 +71,5 @@ conta1.verificar_saldo()
 conta1.desativar_conta()
 conta1.verificar_saldo()
 conta1.ativar_limite(50)
+conta1.sacar(550)
 conta1.verificar_saldo()
