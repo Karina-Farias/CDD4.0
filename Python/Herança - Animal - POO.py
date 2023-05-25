@@ -3,20 +3,31 @@ class Animal():
         self.nome = nome
         self.cor = cor
 
+    def comer(self):
+        print(f"{self.nome} foi comer...")
+
 class Gato(Animal):
     def __int__(self, nome, cor):
         super().__init__(nome, cor)
 
-    def miar(self):
+    def emitirSom(self):
         print(f"{self.nome} foi miando...")
+
+    def comer(self, comida):
+        self.comida = comida
+        print(f"{self.nome} está comendo {self.comida}")
 
 
 class Cachorro(Animal):
     def __int__(self, nome, cor):
         super().__init__(nome, cor)
 
-    def latir(self):
+    def emitirSom(self):
         print(f"{self.nome} foi latir...")
+
+    def comer(self, comida):
+        self.comida = comida
+        print(f"{self.nome} está comendo {self.comida}")
 
 class Coelho(Animal):
     def __int__(self, nome, cor):
@@ -29,7 +40,7 @@ class Vaca(Animal):
     def __int__(self, nome, cor):
         super().__init__(nome, cor)
 
-    def mugir(self):
+    def emitirSom(self):
         print(f"{self.nome} foi mugir...")
 
 
@@ -38,7 +49,8 @@ cachorro1 = Cachorro("O cachorro Apolo","preto")
 coelho1 = Coelho("O Coelho Bolinha","cinza")
 vaca1 = Vaca("A vaca Bella","preta")
 
-gato1.miar()
-cachorro1.latir()
-coelho1.pular()
-vaca1.mugir()
+
+gato1.comer("ração")
+cachorro1.comer("biscoito")
+vaca1.comer()
+coelho1.comer()
