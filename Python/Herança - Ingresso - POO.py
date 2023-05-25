@@ -7,16 +7,20 @@ class Ingresso:
 
 
 class VIP(Ingresso):
-    def __init__(self, valor, adicional):
+    def __init__(self, valor):
         super().__init__(valor)
-        self.adicional = adicional
 
-    def valorVIP(self):
-        return self.valor + self.adicional
+    def imprimeValor(self, adicional):
+        self.adicional = adicional
+        self.valor = self.valor + self.adicional
+        print(f"Valor do ingresso VIP: R$ {self.valor:.2f}")
 
 ingresso1 = Ingresso(50.00)
-ingresso1.imprimeValor()
+vip1 = VIP(15)
 
-vip1 = VIP(50, 50)
-vip_valor = vip1.valorVIP()
-print(f"Valor do ingresso VIP: R$ {vip_valor:.2f}")
+ingresso1.imprimeValor()
+vip1.imprimeValor(50)
+
+
+
+
