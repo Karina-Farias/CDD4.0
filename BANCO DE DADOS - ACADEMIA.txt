@@ -1,0 +1,9 @@
+BANCO DE DADOS - ACADEMIA:
+
+ENTIDADES:		ATRÍBUTOS:								CHAVE PRIMARIA:			RELACIONAMENTO:
+
+1 - Alunos		|Matricula, nome, cpf, DataNascimento, email, telefone, endereço	|Matricula					
+2 - Profesor		|IdProfessor, nome, cpf, função, email, telefone, endereço		|IdProfessor
+3 - Modalidade		|IdModalidade, nome, valor 						|IdModalidade 	
+4 - Sala		|IdSala, HorarioAula							|IdSala
+5 - Plano		|IdPlano, basico, premiun						|IdPlano
